@@ -1,0 +1,187 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    {\Large \textbf{UNIVERSIDAD T{\'E}CNICA ESTATAL DE QUEVEDO}}\\[0.3cm]
+    {\large Facultad de Ciencias de la Computaci{\'o}n}\\
+    {\large Carrera de Ingenier{\'i}a en Software}\\[1.5cm]
+    {\large \textbf{Asignatura:} Ingenier{\'i}a de Requerimientos (ISR-401) -- 4.° Nivel, Paralelo A}\\[0.5cm]
+    {\Large \textbf{PROYECTO FIN DE CURSO (TA-PFC-E1)}}\\[0.4cm]
+    {\LARGE \textbf{DentiTech: Sistema de Gesti{\'o}n Integral para la Cl{\'i}nica Odontol{\'o}gica Medicus}}\\[1cm]
+    {\large \textbf{Entrega 1:} Visi{\'o}n, Alcance, Partes Interesadas, Contexto y Plan de Elicitaci{\'o}n}\\[1.5cm]
+    \begin{flushleft}
+    \textbf{Integrantes del Equipo:}\\
+    \begin{itemize}
+        \item Alc{\'i}var V{\'e}lez Anderson Adonis
+        \item Contreras Ch{\'a}vez Kevin Germ{\'a}n
+        \item Fuertes Calvo Landy Lorena
+        \item Mor{\'a}n Pilaguano Frixon Fernando
+    \end{itemize}
+    \vspace{0.6cm}
+    \textbf{Docente:} Gleiston Cicer{\'o}n Guerrero Ulloa, PhD\\
+    \textbf{Organizaci{\'o}n Cliente:} Cl{\'i}nica Odontol{\'o}gica Medicus (Cooperativa Jet, Quevedo, Los R{\'i}os)\\
+    \textbf{Repositorio GitHub:} \url{https://github.com/kcontrerasc3-cloud/DentiTech}\\
+    \textbf{Fecha de Entrega:} 21 de noviembre de 2026
+    \end{flushleft}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+% 1. ORGANIZACION, VISION Y ALCANCE (Aporte de Anderson)
+\section{Caracterizaci{\'o}n de la Organizaci{\'o}n, Visi{\'o}n y Alcance}
+% Pegar aqui el aporte de Anderson cuando este listo
+
+% 2. PARTES INTERESADAS (Aporte de Anderson + Matriz de Landy)
+\section{An{\'a}lisis de Partes Interesadas}
+% Pegar aqui el aporte de Anderson y la matriz de Landy cuando esten listos
+
+% 3. CONTEXTO DEL SISTEMA Y OCHO PERSPECTIVAS (Aporte de Landy)
+\section{Contexto del Sistema y Perspectivas de An{\'a}lisis}
+% Pegar aqui el aporte de Landy cuando este listo
+
+% 4. PLAN DE ELICITACION E INSTRUMENTOS (Aporte de Frixon)
+\section{Plan de Elicitaci{\'o}n de Requisitos}
+% Pegar aqui el aporte de Frixon cuando este listo
+
+% 5. ETICA Y PROTECCION DE DATOS PERSONALES (Aporte de Frixon)
+\section{{\'E}tica, Consentimiento Informado y Custodia de Evidencias}
+% Pegar aqui el aporte de Frixon cuando este listo
+
+% 6. GESTION DEL PROYECTO Y DECLARACION DE USO DE IA (Aporte de Kevin)
+\section{Gesti{\'o}n del Proyecto}
+
+La gesti{\'o}n del Proyecto Fin de Curso (PFC) correspondiente al sistema \textit{DentiTech} para la cl{\'i}nica odontol{\'o}gica \textit{Medicus} (ubicada en el sector Cooperativa Jet, cant{\'o}n Quevedo, provincia de Los R{\'i}os) se estructura bajo los principios de direcci{\'o}n de proyectos establecidos en la gu{\'i}a PMBOK \cite{pmbok2021}. Esta planificaci{\'o}n garantiza la trazabilidad de los entregables, el cumplimiento de los hitos acad{\'e}micos de la asignatura Ingenier{\'i}a de Requerimientos (ISR-401) y la coordinaci{\'o}n efectiva con la organizaci{\'o}n cliente.
+
+\subsection{Roles y Responsabilidades del Equipo}
+
+El equipo de trabajo est{\'a} conformado por cuatro estudiantes de cuarto nivel de la Carrera de Software de la Universidad T{\'e}cnica Estatal de Quevedo (UTEQ). Con el prop{\'o}sito de asegurar una distribuci{\'o}n equitativa y verificable mediante el control de versiones en GitHub, se asignaron los roles detallados en la Tabla~\ref{tab:roles_equipo}.
+
+\begin{table}[htbp]
+\centering
+\caption{Distribuci{\'o}n de roles y responsabilidades del equipo de proyecto}
+\label{tab:roles_equipo}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{4.2cm} >{\raggedright\arraybackslash}p{3.8cm} >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Integrante} & \textbf{Rol Asignado} & \textbf{Responsabilidades Principales} \\
+\midrule
+Alc{\'i}var V{\'e}lez Anderson Adonis & Analista de Negocio y Partes Interesadas & Levantamiento de informaci{\'o}n institucional de Medicus, definici{\'o}n de visi{\'o}n, objetivos medibles, l{\'i}mites de alcance y caracterizaci{\'o}n de partes interesadas. \\
+\addlinespace
+Contreras Ch{\'a}vez Kevin Germ{\'a}n & Integrador LaTeX, Arquitectura del Repositorio y Gesti{\'o}n & Administraci{\'o}n del repositorio GitHub, estructuraci{\'o}n documental en LaTeX, gesti{\'o}n bibliogr{\'a}fica IEEE, cronograma, plan de comunicaci{\'o}n y matriz de riesgos. \\
+\addlinespace
+Fuertes Calvo Landy Lorena & Arquitecta de Contexto y Modelado Visual & Elaboraci{\'o}n del diagrama de contexto editable, an{\'a}lisis de las ocho perspectivas del s{\'i}labo y construcci{\'o}n de la matriz poder-inter{\'e}s. \\
+\addlinespace
+Mor{\'a}n Pilaguano Frixon Fernando & Especialista en Elicitaci{\'o}n y {\'E}tica de Datos & Dise{\~n}o del plan de elicitaci{\'o}n, elaboraci{\'o}n de instrumentos (entrevista, cuestionario y observaci{\'o}n), protocolo de consentimiento informado y manifiesto de evidencias. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Cronograma General hasta la Semana 17}
+
+El desarrollo de \textit{DentiTech} abarca desde la identificaci{\'o}n inicial del problema en la Semana 4 hasta la validaci{\'o}n y entrega final en la Semana 17 del per{\'i}odo acad{\'e}mico SPA 2026-2027. La Tabla~\ref{tab:cronograma_pfc} resume las fases, actividades clave y productos verificables planificados.
+
+\begin{table}[htbp]
+\centering
+\caption{Cronograma de actividades del PFC DentiTech (Semanas 4 a 17)}
+\label{tab:cronograma_pfc}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{4.2cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3.3cm}}
+\toprule
+\textbf{Semanas} & \textbf{Fase del Proyecto} & \textbf{Actividades Principales} & \textbf{Entregable / Hito} \\
+\midrule
+Semana 4 & Inicio, Visi{\'o}n y Planificaci{\'o}n (E1) & Formalizaci{\'o}n de contacto con Medicus, definici{\'o}n de alcance, matriz de interesados, contexto e instrumentos de elicitaci{\'o}n. & Informe E1 en LaTeX y repositorio base. \\
+\addlinespace
+Semanas 5--6 & Ejecuci{\'o}n de Elicitaci{\'o}n & Aplicaci{\'o}n de entrevistas, cuestionarios y observaci{\'o}n directa en Medicus; registro y anonimizaci{\'o}n de evidencias. & Actas, transcripciones y matriz de hallazgos. \\
+\addlinespace
+Semanas 7--8 & An{\'a}lisis y Clasificaci{\'o}n & Depuraci{\'o}n de necesidades, resoluci{\'o}n de conflictos entre roles y clasificaci{\'o}n de requisitos funcionales y no funcionales \cite{iso29148}. & Cat{\'a}logo preliminar de requisitos (E2). \\
+\addlinespace
+Semanas 9--11 & Modelado de Requisitos & Construcci{\'o}n de diagramas de casos de uso, modelos de procesos de atenci{\'o}n odontol{\'o}gica, modelos de datos y m{\'a}quinas de estado. & Modelos UML y diccionario de datos. \\
+\addlinespace
+Semanas 12--14 & Especificaci{\'o}n ERS y Prototipado & Redacci{\'o}n de la Especificaci{\'o}n de Requisitos de Software (ERS) seg{\'u}n ISO/IEC/IEEE 29148 y dise{\~n}o de prototipos de interfaz. & Documento ERS v1.0 y maquetas funcionales. \\
+\addlinespace
+Semanas 15--16 & Verificaci{\'o}n y Validaci{\'o}n & Inspecci{\'o}n t{\'e}cnica de calidad, matriz de trazabilidad bidireccional y sesi{\'o}n de validaci{\'o}n con el personal de Medicus. & Acta de validaci{\'o}n y ERS ajustada. \\
+\addlinespace
+Semana 17 & Cierre y Sustentaci{\'o}n Final & Integraci{\'o}n final del repositorio, verificaci{\'o}n de reproducibilidad documental y sustentaci{\'o}n ante el tribunal docente. & Entrega final PFC y defensa t{\'e}cnica. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Plan de Comunicaci{\'o}n con la Organizaci{\'o}n}
+
+Para evitar interrupciones en la jornada cl{\'i}nica de \textit{Medicus} y mantener un canal formal de coordinaci{\'o}n, se establece el protocolo de comunicaci{\'o}n descrito en la Tabla~\ref{tab:plan_comunicacion}. Toda evidencia recabada se resguarda conforme a la Ley Org{\'a}nica de Protecci{\'o}n de Datos Personales \cite{lopdp2021, reglamento_lopdp2023}.
+
+\begin{table}[htbp]
+\centering
+\caption{Plan de comunicaci{\'o}n con la cl{\'i}nica odontol{\'o}gica Medicus}
+\label{tab:plan_comunicacion}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{3.0cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{Instancia} & \textbf{Participantes} & \textbf{Canal y Frecuencia} & \textbf{Prop{\'o}sito y Registro} \\
+\midrule
+Formalizaci{\'o}n y aval institucional & Responsable de Medicus y Analista de Negocio & Presencial / Carta f{\'i}sica (Inicio PFC) & Aprobaci{\'o}n del estudio y firma de carta de aceptaci{\'o}n institucional. \\
+\addlinespace
+Sesiones de elicitaci{\'o}n y observaci{\'o}n & Personal cl{\'i}nico, recepci{\'o}n y Especialista en Elicitaci{\'o}n & Presencial en Medicus (Semanas 5--6) & Levantamiento de flujos de citas, historias cl{\'i}nicas y cobros previa firma de consentimiento. \\
+\addlinespace
+Validaci{\'o}n de modelos y prototipos & Direcci{\'o}n de Medicus y equipo desarrollador & Presencial / Videollamada (Semanas 11 y 15) & Revisi{\'o}n de alcance, reglas de negocio y prototipos de interfaz de \textit{DentiTech}. \\
+\addlinespace
+Consultas operativas r{\'a}pidas & Enlace operativo de Medicus e Integrador & Mensajer{\'i}a institucional (Seg{\'u}n demanda) & Confirmaci{\'o}n de horarios de visita y aclaraci{\'o}n puntual de formatos cl{\'i}nicos. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Registro de Riesgos del Proyecto}
+
+Se identificaron seis riesgos principales asociados tanto a la operaci{\'o}n diaria de \textit{Medicus} en Quevedo como a la ejecuci{\'o}n t{\'e}cnica del equipo, junto con sus estrategias de mitigaci{\'o}n (Tabla~\ref{tab:registro_riesgos}).
+
+\begin{table}[htbp]
+\centering
+\caption{Registro y plan de mitigaci{\'o}n de riesgos del proyecto DentiTech}
+\label{tab:registro_riesgos}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}p{1.2cm} >{\raggedright\arraybackslash}p{3.8cm} >{\centering\arraybackslash}p{2.0cm} >{\centering\arraybackslash}p{1.8cm} >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{ID} & \textbf{Descripci{\'o}n del Riesgo} & \textbf{Probabilidad} & \textbf{Impacto} & \textbf{Estrategia de Mitigaci{\'o}n} \\
+\midrule
+R-01 & Demora en la formalizaci{\'o}n escrita de la carta de aceptaci{\'o}n por disponibilidad del responsable de Medicus. & Alta & Alto & Gestionar la firma presencial mediante el enlace interno al inicio de la Semana 5 y documentar el primer contacto en el manifiesto. \\
+\addlinespace
+R-02 & Interrupci{\'o}n de entrevistas por atenci{\'o}n de urgencias odontol{\'o}gicas durante la jornada laboral. & Alta & Medio & Agendar bloques cortos de 20 minutos en horarios de menor flujo y emplear cuestionarios estructurados como respaldo. \\
+\addlinespace
+R-03 & Ambig{\"u}edad en reglas de presupuestos, abonos parciales y odontogramas entre especialistas. & Media & Alto & Contrastar los registros f{\'i}sicos actuales de Medicus mediante observaci{\'o}n directa y validar las reglas con el odont{\'o}logo principal \cite{pohl2025}. \\
+\addlinespace
+R-04 & Exposici{\'o}n accidental de datos sensibles de pacientes en evidencias o capturas del repositorio p{\'u}blico. & Baja & Muy Alto & Aplicar anonimizaci{\'o}n estricta antes de exportar archivos y almacenar documentos originales {\'u}nicamente en la carpeta privada institucional \cite{lopdp2021}. \\
+\addlinespace
+R-05 & Desviaci{\'o}n del alcance (\textit{scope creep}) por solicitudes de m{\'o}dulos contables o tributarios complejos no previstos. & Media & Alto & Mantener una matriz de trazabilidad frente a los l{\'i}mites definidos en E1 y registrar nuevas peticiones como mejoras futuras \cite{wiegers2013}. \\
+\addlinespace
+R-06 & Conflictos de integraci{\'o}n en LaTeX o entregas tard{\'i}as en el repositorio GitHub. & Media & Medio & Estandarizar subcarpetas por integrante, realizar integraciones parciales tempranas y validar la compilaci{\'o}n en Overleaf. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Declaraci{\'o}n de Uso de Inteligencia Artificial}
+
+En cumplimiento de las normas de integridad acad{\'e}mica de la asignatura, se declara el uso de herramientas de inteligencia artificial generativa exclusivamente como apoyo t{\'e}cnico y editorial durante la elaboraci{\'o}n de este informe:
+
+\begin{itemize}
+    \item \textbf{Herramienta y versi{\'o}n:} Google Gemini (modelo conversacional web, versi{\'o}n vigente en noviembre de 2026).
+    \item \textbf{Prop{\'o}sito del uso:} Asistencia en la estructuraci{\'o}n de plantillas y tablas en lenguaje LaTeX, configuraci{\'o}n de comandos de control de versiones en Git y revisi{\'o}n ortogr{\'a}fica y de estilo t{\'e}cnico en espa{\~n}ol.
+    \item \textbf{Mecanismo de verificaci{\'o}n y autor{\'i}a:} El equipo defini{\'o} de forma aut{\'o}noma el caso de estudio de la cl{\'i}nica odontol{\'o}gica \textit{Medicus} en Quevedo, el alcance del sistema \textit{DentiTech}, los roles, el cronograma y los instrumentos de elicitaci{\'o}n. Todo fragmento de c{\'o}digo LaTeX sugerido fue revisado l{\'i}nea por l{\'i}nea, adaptado a los datos reales de la organizaci{\'o}n, compilado manualmente en Overleaf y contrastado con las fuentes bibliogr{\'a}ficas originales en formato IEEE \cite{iso29148, pohl2025, ireb2026}.
+\end{itemize}
+
+\bibliographystyle{IEEEtran}
+\bibliography{referencias}
+
+\end{document}
