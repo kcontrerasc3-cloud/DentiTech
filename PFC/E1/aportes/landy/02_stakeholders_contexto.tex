@@ -1,64 +1,122 @@
+% ==============================================================================
+% APORTE DE LANDY FUERTES - SECCIÓN 2 (MATRIZ) Y SECCIÓN 3 (CONTEXTO)
+% ==============================================================================
+% ==============================================================================
+% APORTE INDIVIDUAL: FUERTES CALVO LANDY LORENA
+% SECCIÓN: PARTES INTERESADAS (6 ROLES) Y CONTEXTO DEL SISTEMA (DENTITECH)
+% ==============================================================================
+
 \section{Partes Interesadas y Contexto del Sistema}
 
-\subsection{Identificación y Análisis de Partes Interesadas}
+\subsection{Identificaci\'on y Caracterizaci\'on de Partes Interesadas}
 
-Conforme a la norma ISO/IEC/IEEE 29148:2018 \cite{iso29148}, la especificación rigurosa de requisitos demanda identificar previamente a todas las partes interesadas (roles operativos, administrativos y externos) que interactúan con el sistema o reciben impacto de su operación en la \textbf{Clínica Odontológica Medicus}, ubicada en el sector Cooperativa Jet de la ciudad de Quevedo, provincia de Los Ríos, Ecuador. Para garantizar el cumplimiento de confidencialidad establecido en la Ley Orgánica de Protección de Datos Personales (LOPDP) \cite{lopdp2021}, los actores se caracterizan exclusivamente por su función organizacional, sin registrar identidades personales.
+Conforme a la norma ISO/IEC/IEEE 29148:2018 \cite{iso29148}, la especificaci\'on rigurosa de requisitos demanda identificar previamente a las partes interesadas que interact\'uan con el sistema o reciben impacto de su operaci\'on en la \textbf{Cl\'inica Odontol\'ogica Medicus}, ubicada en el sector Cooperativa Jet de la ciudad de Quevedo, provincia de Los R\'ios, Ecuador. Para garantizar el cumplimiento de confidencialidad establecido en la Ley Org\'anica de Protecci\'on de Datos Personales (LOPDP) \cite{lopdp2021}, los actores se caracterizan exclusivamente por su rol organizacional, sin registrar identidades personales.
 
-La Tabla~\ref{tab:partes_interesadas} detalla los ocho roles identificados dentro de la operación de la Clínica Odontológica Medicus, su interés principal respecto al sistema \textbf{DentiTech}, su grado de influencia sobre las decisiones del proyecto, su disponibilidad estimada para las sesiones de elicitación y la estrategia de participación asignada.
+La Tabla~\ref{tab:partes_interesadas} detalla los seis roles definidos para la operaci\'on de la Cl\'inica Odontol\'ogica Medicus, su inter\'es principal respecto al sistema \textbf{DentiTech}, su grado de influencia sobre las decisiones del proyecto, su disponibilidad estimada para las sesiones de elicitaci\'on y la estrategia de participaci\'on asignada.
 
 \begin{table}[htbp]
 \centering
-\caption{Caracterización de las partes interesadas de la Clínica Odontológica Medicus.}
+\caption{Caracterizaci\'on de las partes interesadas de la Cl\'inica Odontol\'ogica Medicus.}
 \label{tab:partes_interesadas}
 \scriptsize
 \setlength{\tabcolsep}{4pt}
 \renewcommand{\arraystretch}{1.25}
 \begin{tabularx}{\textwidth}{|p{2.2cm}|X|c|c|p{1.8cm}|X|}
 \hline
-\textbf{Rol} & \textbf{Interés Principal en DentiTech} & \textbf{Influencia} & \textbf{Interés} & \textbf{Disponibilidad} & \textbf{Estrategia de Participación} \\
+\textbf{Rol} & \textbf{Inter\'es Principal en DentiTech} & \textbf{Influencia} & \textbf{Inter\'es} & \textbf{Disponibilidad} & \textbf{Estrategia de Participaci\'on} \\
 \hline
-Odontólogo Director & Supervisar indicadores clínicos, rentabilidad por especialidad, control de insumos y cumplimiento normativo. & Alta & Alto & Baja (1--2 h/sem) & Entrevistas ejecutivas breves y validación de reportes gerenciales clave. \\
+Administrador & Supervisar indicadores cl\'inicos y operativos, gestionar roles de usuario, respaldos, cobros, saldos y reportes gerenciales. & Alta & Alto & Baja (1--2 h/sem) & Entrevistas ejecutivas breves y validaci\'on de reportes administrativos y financieros clave. \\
 \hline
-Odontólogo Especialista & Agilizar el registro de odontogramas digitales, diagnósticos, planes de tratamiento, evoluciones y recetas. & Alta & Alto & Media (2--3 h/sem) & Talleres de prototipado de interfaz clínica y observación directa en consulta. \\
+Odont\'ologo & Agilizar el registro de odontogramas digitales, diagn\'osticos, planes de tratamiento, evoluciones cl\'inicas y recetas. & Alta & Alto & Media (2--3 h/sem) & Talleres de prototipado de interfaz cl\'inica y observaci\'on directa en consultorio. \\
 \hline
-Asistente Dental & Consultar planes de tratamiento programados, registrar consumo de materiales y gestionar bioseguridad. & Media & Alto & Media (2 h/sem) & Cuestionario operativo y observación de flujo de preparación de instrumental. \\
+Higienista & Consultar planes de tratamiento programados, registrar consumo de insumos y controlar protocolos de bioseguridad. & Media & Alto & Media (2 h/sem) & Cuestionario operativo y observaci\'on del flujo de preparaci\'on de instrumental. \\
 \hline
-Recepcionista & Administrar la agenda multiespecialista, confirmar citas, reducir inasistencias y registrar filiación de pacientes. & Alta & Alto & Alta (3--4 h/sem) & Entrevista semiestructurada y observación directa en puesto de recepción. \\
+Recepcionista & Administrar la agenda de citas, confirmar asistencia, reducir inasistencias y registrar filiaci\'on de pacientes. & Alta & Alto & Alta (3--4 h/sem) & Entrevista semiestructurada y observaci\'on directa en puesto de recepci\'on. \\
 \hline
-Encargado de Caja & Emitir comprobantes, gestionar abonos de tratamientos prolongados, controlar saldos y realizar cierres diarios. & Alta & Medio & Media (2 h/sem) & Revisión documental de comprobantes actuales y entrevista estructurada. \\
+Paciente & Recibir recordatorios oportunos de citas, conocer presupuestos claros de tratamientos y acceder a sus comprobantes. & Baja & Alto & Baja (15 min/cita) & Cuestionario breve de satisfacci\'on y canales de comunicaci\'on post-atenci\'on. \\
 \hline
-Paciente & Recibir recordatorios oportunos de citas, conocer presupuestos claros de tratamientos y acceder a sus recibos. & Baja & Alto & Baja (15 min/cita) & Cuestionario breve de satisfacción y canales de comunicación post-atención. \\
-\hline
-Proveedor de Insumos & Recibir órdenes de reposición oportunas y mantener actualizados catálogos, lotes y fechas de caducidad. & Baja & Bajo & Baja (bajo demanda) & Revisión de formatos de pedidos y listas de precios vigentes. \\
-\hline
-Administrador TI & Garantizar disponibilidad del servidor, gestión de roles, respaldos periódicos y cumplimiento de seguridad. & Alta & Medio & Media (2 h/sem) & Consulta técnica sobre infraestructura instalada y políticas de respaldo. \\
+Proveedor de insumos & Recibir \'ordenes de reposici\'on oportunas y mantener actualizados cat\'alogos, lotes y fechas de caducidad. & Baja & Bajo & Baja (bajo demanda) & Revisi\'on de formatos de pedidos y listas de precios vigentes. \\
 \hline
 \end{tabularx}
 \end{table}
 
-\subsection{Matriz Poder-Interés}
+\subsection{Matriz Poder-Inter\'es}
 
-A partir de los atributos de poder e interés consignados en la Tabla~\ref{tab:partes_interesadas}, se clasifica a los ocho roles dentro de los cuatro cuadrantes de gobernanza representados en la Figura~\ref{fig:matriz_poder_interes}.
+A partir de los atributos de poder e inter\'es consignados en la Tabla~\ref{tab:partes_interesadas}, la Figura~\ref{fig:matriz_poder_interes} clasifica a los seis roles dentro de los cuatro cuadrantes de gobernanza seg\'un su grado de influencia y nivel de inter\'es en el sistema \textbf{DentiTech} \cite{iso29148}.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.88\textwidth]{figuras/matriz_poder_interes.png}
-\caption{Matriz Poder-Interés de las partes interesadas del sistema DentiTech.}
+\caption{Matriz Poder-Inter\'es de las partes interesadas del sistema DentiTech.}
 \label{fig:matriz_poder_interes}
 \end{figure}
 
-La distribución resultante orienta la asignación de esfuerzo durante la ingeniería de requisitos:
+La distribuci\'on resultante orienta la estrategia de participaci\'on durante la ingenier\'ia de requisitos:
 
 \begin{itemize}
-    \item \textbf{Gestionar de cerca (Alto Poder / Alto Interés):} Agrupa al Odontólogo Director, al Odontólogo Especialista y a la Recepcionista. Estos roles definen las reglas del negocio clínico en Medicus y operan el núcleo diario del sistema; su aprobación resulta indispensable para validar cada entregable funcional.
-    \item \textbf{Mantener satisfecho (Alto Poder / Bajo-Medio Interés):} Incluye al Administrador TI y al Encargado de Caja. Aunque no intervienen en la atención odontológica directa, poseen capacidad de veto técnico o financiero si el sistema incumple requisitos de seguridad, respaldos o cuadre contable.
-    \item \textbf{Mantener informado (Bajo-Medio Poder / Alto Interés):} Comprende al Asistente Dental y al Paciente. Su retroalimentación mejora la usabilidad operativa y la experiencia de servicio en la clínica, por lo que se recogen sus necesidades mediante instrumentos focalizados sin sobrecargar las decisiones arquitectónicas.
-    \item \textbf{Monitorear (Bajo Poder / Bajo Interés):} Corresponde al Proveedor de Insumos, cuya interacción se limita al intercambio estándar de catálogos y órdenes de compra externas.
+    \item \textbf{Gestionar de cerca (Alto Poder / Alto Inter\'es):} Agrupa al \textbf{Administrador}, al \textbf{Odont\'ologo} y a la \textbf{Recepcionista}. Estos roles definen las reglas operativas, cl\'inicas y administrativas de la Cl\'inica Odontol\'ogica Medicus; su validaci\'on continua es indispensable para aprobar los entregables del sistema.
+    \item \textbf{Mantener satisfecho (Alto Poder / Bajo-Medio Inter\'es):} No registra actores exclusivos en este cuadrante, dado que los roles con mayor capacidad de decisi\'on en la cl\'inica participan directamente en la operaci\'on diaria del sistema.
+    \item \textbf{Mantener informado (Bajo-Medio Poder / Alto Inter\'es):} Comprende al \textbf{Higienista} y al \textbf{Paciente}. Sus necesidades sobre flujos de preparaci\'on cl\'inica, bioseguridad, recordatorios y claridad en presupuestos se recogen mediante instrumentos focalizados sin sobrecargar las decisiones arquitect\'onicas.
+    \item \textbf{Monitorear (Bajo Poder / Bajo Inter\'es):} Corresponde al \textbf{Proveedor de insumos}, cuya interacci\'on se limita al intercambio est\'andar de cat\'alogos, lotes, fechas de caducidad y \'ordenes de reposici\'on.
 \end{itemize}
 
+\subsection{Contexto y L\'imites del Sistema}
+
+Siguiendo los principios de delimitaci\'on de contexto establecidos por Pohl \cite{pohl2025} y el programa de estudios IREB \cite{ireb2026}, el diagrama de contexto de la Figura~\ref{fig:diagrama_contexto} establece la frontera entre \textbf{DentiTech} y las seis entidades externas de su entorno operativo en la Cl\'inica Odontol\'ogica Medicus.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{figuras/diagrama_contexto.png}
+\caption{Diagrama de contexto del sistema DentiTech y flujos de informaci\'on con entidades externas.}
+\label{fig:diagrama_contexto}
+\end{figure}
+
+El sistema central gestiona de manera integrada el agendamiento de citas, la historia cl\'inica odontol\'ogica (odontograma, diagn\'osticos y evoluciones), el control de inventario de insumos y la administraci\'on de cobros y reportes. Quedan fuera de la frontera del software los equipos m\'edicos de diagn\'ostico por imagen (rayos X intraorales) y las plataformas bancarias externas, con las cuales \'unicamente se registran referencias documentales de resultados o comprobantes de pago.
+
+\subsection{An\'alisis de las Ocho Perspectivas del Contexto}
+
+Para asegurar una comprensi\'on integral del entorno donde operar\'a \textbf{DentiTech} en la Cl\'inica Odontol\'ogica Medicus (sector Cooperativa Jet, Quevedo), la Tabla~\ref{tab:ocho_perspectivas} sistematiza el an\'alisis bajo las ocho perspectivas del contexto definidas en el s\'ilabo de la asignatura \cite{ireb2026}.
+
+\begin{table}[htbp]
+\centering
+\caption{An\'alisis del entorno operativo de la Cl\'inica Odontol\'ogica Medicus seg\'un las ocho perspectivas del contexto.}
+\label{tab:ocho_perspectivas}
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|p{2.6cm}|X|X|}
+\hline
+\textbf{Perspectiva} & \textbf{Aspecto Evaluado en el Dominio Odontol\'ogico} & \textbf{Hallazgo en la Cl\'inica Odontol\'ogica Medicus} \\
+\hline
+1. Negocio / Organizacional & Estructura jer\'arquica, flujo de atenci\'on al paciente, horarios de consulta y modelo de cobro por procedimientos. & La cl\'inica opera en el sector Cooperativa Jet de Quevedo brindando atenci\'on odontol\'ogica bajo esquema de citas programadas y atenci\'on por demanda, con cobros por sesi\'on o abonos por tratamiento supervisados por el Administrador. \\
+\hline
+2. Usuario / Operativa & Nivel de alfabetizaci\'on digital del personal (Administrador, Odont\'ologo, Higienista, Recepcionista) y carga en horas pico. & El personal cl\'inico y administrativo maneja herramientas ofim\'aticas b\'asicas; el registro actual de citas y fichas presenta cuellos de botella en horas de mayor afluencia de pacientes. \\
+\hline
+3. T\'ecnica / Tecnol\'ogica & Equipamiento de c\'omputo disponible en recepci\'on y consultorios, conectividad a internet y respaldos locales. & El establecimiento cuenta con estaciones de c\'omputo en \'area administrativa y acceso a internet comercial estable, sin un sistema integrado especializado en gesti\'on odontol\'ogica. \\
+\hline
+4. Datos / Informaci\'on & Volumen de historias cl\'inicas activas, estructura del odontograma, trazabilidad de abonos e inventario de insumos. & Las historias cl\'inicas, odontogramas, pagos y movimientos de insumos requieren centralizaci\'on digital para evitar duplicidad de fichas y facilitar el seguimiento hist\'orico por paciente. \\
+\hline
+5. Legal / Normativa & Cumplimiento de la LOPDP del Ecuador \cite{lopdp2021} respecto a datos sensibles de salud, consentimiento informado y normativa sanitaria del MSP. & La cl\'inica requiere custodia estricta de historias cl\'inicas y consentimientos informados firmados antes de intervenciones invasivas, bajo principios de confidencialidad y control de acceso por rol. \\
+\hline
+6. Econ\'omica / Financiera & Restricciones presupuestarias para licenciamiento de software, costos de mantenimiento e impacto de insumos caducados. & Se prioriza una soluci\'on sostenible sin costos elevados de licenciamiento recurrente, orientada a reducir p\'erdidas por caducidad de materiales entregados por el Proveedor de insumos. \\
+\hline
+7. Cultural / Social & H\'abitos de comunicaci\'on de los pacientes de Quevedo (preferencia por mensajer\'ia instant\'anea) y adopci\'on del sistema. & Los pacientes del sector prefieren confirmaciones y recordatorios \'agiles mediante mensajer\'ia instant\'anea, mientras que el equipo cl\'inico demanda interfaces intuitivas de r\'apida adopci\'on. \\
+\hline
+8. Ambiental / F\'isica & Condiciones f\'isicas de los consultorios (iluminaci\'on, bioseguridad, uso de guantes durante la consulta) que condicionan la operaci\'on. & La operaci\'on cl\'inica del Odont\'ologo e Higienista exige interfaces de registro r\'apido con m\'inima manipulaci\'on de perif\'ericos durante la atenci\'on y equipos fuera de zonas h\'umedas. \\
+\hline
+\end{tabularx}
+\end{table}
+% ------------------------------------------------------------------------------
+% PARTE A: PARA INTEGRAR EN LA SECCIÓN 2 (\section{Análisis de Partes Interesadas})
+% ------------------------------------------------------------------------------
+
+
+% ------------------------------------------------------------------------------
+% PARTE B: PARA INTEGRAR EN LA SECCIÓN 3 (\section{Contexto del Sistema y Perspectivas de Análisis})
+% ------------------------------------------------------------------------------
 \subsection{Contexto y Límites del Sistema}
 
-Siguiendo los principios de delimitación de contexto establecidos por Pohl \cite{pohl2025} y el programa de estudios IREB \cite{ireb2026}, el diagrama de contexto de la Figura~\ref{fig:diagrama_contexto} establece la frontera entre \textbf{DentiTech} y las entidades externas de su entorno operativo en la Clínica Odontológica Medicus.
+Siguiendo los principios de delimitación de contexto establecidos por Pohl \cite{pohl2025} y el programa de estudios IREB \cite{ireb2026}, el diagrama de contexto de la Figura~\ref{fig:diagrama_contexto} establece la frontera entre \textbf{DentiTech} y las seis entidades externas de su entorno operativo en la Clínica Odontológica Medicus, ubicada en el sector Cooperativa Jet de la ciudad de Quevedo.
 
 \begin{figure}[htbp]
 \centering
@@ -67,11 +125,11 @@ Siguiendo los principios de delimitación de contexto establecidos por Pohl \cit
 \label{fig:diagrama_contexto}
 \end{figure}
 
-El sistema central gestiona de manera integrada el agendamiento de citas, la historia clínica odontológica (incluyendo odontograma y evoluciones), el control de inventario de insumos dentales y la liquidación de cobros. Quedan fuera de la frontera del software los equipos médicos de diagnóstico por imagen (rayos X intraorales) y las plataformas bancarias externas, con las cuales únicamente se registran referencias documentales de resultados o comprobantes de pago.
+El sistema central gestiona de manera integrada el agendamiento de citas, la historia clínica odontológica (odontograma, diagnósticos y evoluciones), el control de inventario de insumos y la administración de cobros y reportes. Quedan fuera de la frontera del software los equipos médicos de diagnóstico por imagen (rayos X intraorales) y las plataformas bancarias externas, con las cuales únicamente se registran referencias documentales de resultados o comprobantes de pago.
 
 \subsection{Análisis de las Ocho Perspectivas del Contexto}
 
-Para asegurar una comprensión integral del entorno donde operará \textbf{DentiTech} en la Clínica Odontológica Medicus (sector Cooperativa Jet, Quevedo), la Tabla~\ref{tab:ocho_perspectivas} sistematiza el análisis bajo las ocho perspectivas del contexto definidas en el sílabo de la asignatura \cite{ireb2026}.
+Para asegurar una comprensión integral del entorno donde operará \textbf{DentiTech} en la Clínica Odontológica Medicus, la Tabla~\ref{tab:ocho_perspectivas} sistematiza el análisis bajo las ocho perspectivas del contexto definidas en el sílabo de la asignatura \cite{ireb2026}, garantizando la confidencialidad de los datos conforme a la LOPDP \cite{lopdp2021}.
 
 \begin{table}[htbp]
 \centering
@@ -84,21 +142,21 @@ Para asegurar una comprensión integral del entorno donde operará \textbf{Denti
 \hline
 \textbf{Perspectiva} & \textbf{Aspecto Evaluado en el Dominio Odontológico} & \textbf{Hallazgo en la Clínica Odontológica Medicus} \\
 \hline
-1. Negocio / Organizacional & Estructura jerárquica, flujo de atención al paciente, horarios de consulta y modelo de cobro por procedimientos. & La clínica opera en el sector Cooperativa Jet de Quevedo brindando atención odontológica general y especializada bajo esquema de citas programadas y atención por demanda, con cobros por sesión o abonos por tratamiento. \\
+1. Negocio / Organizacional & Estructura jerárquica, flujo de atención al paciente, horarios de consulta y modelo de cobro por procedimientos. & La clínica opera en el sector Cooperativa Jet de Quevedo brindando atención odontológica bajo esquema de citas programadas y atención por demanda, con cobros por sesión o abonos por tratamiento supervisados por el Administrador. \\
 \hline
-2. Usuario / Operativa & Nivel de alfabetización digital del personal clínico y administrativo, rotación de asistentes y carga operativa en horas pico. & El personal administrativo y clínico maneja herramientas ofimáticas básicas; el registro actual de citas y fichas presenta cuellos de botella en horas de mayor afluencia de pacientes. \\
+2. Usuario / Operativa & Nivel de alfabetización digital del personal (Administrador, Odontólogo, Higienista, Recepcionista) y carga en horas pico. & El personal clínico y administrativo maneja herramientas ofimáticas básicas; el registro actual de citas y fichas presenta cuellos de botella en horas de mayor afluencia de pacientes. \\
 \hline
-3. Técnica / Tecnológica & Equipamiento de cómputo disponible en recepción y consultorios, conectividad a internet y existencia de servidores o red local. & El establecimiento cuenta con estaciones de cómputo en área administrativa y acceso a internet comercial estable, sin un sistema integrado especializado en gestión odontológica. \\
+3. Técnica / Tecnológica & Equipamiento de cómputo disponible en recepción y consultorios, conectividad a internet y respaldos locales. & El establecimiento cuenta con estaciones de cómputo en área administrativa y acceso a internet comercial estable, sin un sistema integrado especializado en gestión odontológica. \\
 \hline
-4. Datos / Información & Volumen de historias clínicas activas, estructura del odontograma, trazabilidad de abonos y respaldos de información sensible. & Las historias clínicas, odontogramas y registros de abonos requieren centralización digital para evitar duplicidad de fichas y facilitar el seguimiento histórico por paciente. \\
+4. Datos / Información & Volumen de historias clínicas activas, estructura del odontograma, trazabilidad de abonos e inventario de insumos. & Las historias clínicas, odontogramas, pagos y movimientos de insumos requieren centralización digital para evitar duplicidad de fichas y facilitar el seguimiento histórico por paciente. \\
 \hline
-5. Legal / Normativa & Cumplimiento de la LOPDP del Ecuador \cite{lopdp2021} respecto a datos sensibles de salud, consentimiento informado y normativa sanitaria del MSP. & La clínica requiere custodia estricta de historias clínicas y consentimientos informados firmados antes de intervenciones invasivas, bajo principios de confidencialidad y control de acceso por rol. \\
+5. Legal / Normativa & Cumplimiento de la LOPDP del Ecuador \cite{lopdp2021} respecto a datos sensibles de salud, consentimiento informado y normativa del MSP. & La clínica requiere custodia estricta de historias clínicas y consentimientos informados firmados antes de intervenciones invasivas, bajo principios de confidencialidad y control de acceso por rol. \\
 \hline
-6. Económica / Financiera & Restricciones presupuestarias para licenciamiento de software, costos de mantenimiento e impacto de pérdidas por insumos caducados. & Se prioriza una solución sostenible sin costos elevados de licenciamiento recurrente, orientada a reducir pérdidas por caducidad de materiales dentales y mejorar el control de cuentas por cobrar. \\
+6. Económica / Financiera & Restricciones presupuestarias para licenciamiento de software, costos de mantenimiento e impacto de insumos caducados. & Se prioriza una solución sostenible sin costos elevados de licenciamiento recurrente, orientada a reducir pérdidas por caducidad de materiales entregados por el Proveedor de insumos. \\
 \hline
-7. Cultural / Social & Hábitos de comunicación de los pacientes de Quevedo (preferencia por mensajería instantánea) y resistencia al cambio del personal. & Los pacientes del sector prefieren confirmaciones y recordatorios ágiles mediante mensajería instantánea, mientras que el equipo clínico demanda interfaces intuitivas de rápida adopción. \\
+7. Cultural / Social & Hábitos de comunicación de los pacientes de Quevedo (preferencia por mensajería instantánea) y adopción del sistema. & Los pacientes del sector prefieren confirmaciones y recordatorios ágiles mediante mensajería instantánea, mientras que el equipo clínico demanda interfaces intuitivas de rápida adopción. \\
 \hline
-8. Ambiental / Física & Condiciones físicas de los consultorios (iluminación, bioseguridad, uso de guantes durante la consulta) que condicionan la interacción con el equipo. & La operación en sillón odontológico exige interfaces de registro rápido con mínima manipulación de periféricos durante la atención clínica y estaciones ubicadas fuera de zonas húmedas. \\
+8. Ambiental / Física & Condiciones físicas de los consultorios (iluminación, bioseguridad, uso de guantes durante la consulta) que condicionan el uso. & La operación clínica del Odontólogo e Higienista exige interfaces de registro rápido con mínima manipulación de periféricos durante la atención y equipos fuera de zonas húmedas. \\
 \hline
 \end{tabularx}
 \end{table}
