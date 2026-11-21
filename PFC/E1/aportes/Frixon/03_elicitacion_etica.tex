@@ -51,3 +51,33 @@ Sesi{\'o}n 3 (Sem. 6) & Pacientes y Proveedor de insumos & Cuestionario breve y 
 \end{tabularx}
 \end{table}
 Los instrumentos dise{\~n}ados para estas actividades se encuentran en el directorio \texttt{PFC/E1/instrumentos/} bajo los nombres \texttt{01\_guion\_entrevista.pdf}, \texttt{02\_cuestionario.pdf} y \texttt{03\_guia\_observacion.pdf}.
+% =========================================================
+% SECCION 5: ETICA Y PROTECCION DE DATOS PERSONALES 
+
+\section{{\'E}tica, Consentimiento Informado y Custodia de Evidencias}
+
+El levantamiento de informaci{\'o}n en la \textbf{Cl{\'i}nica Odontol{\'o}gica Medicus} involucra procesos cl{\'i}nicos, administrativos y de atenci{\'o}n a pacientes, por lo que su ejecuci{\'o}n se ajusta a los principios {\'e}ticos de la investigaci{\'o}n acad{\'e}mica y a la Ley Org{\'a}nica de Protecci{\'o}n de Datos Personales (\textbf{LOPDP}) del Ecuador \cite{lopdp2021, reglamento_lopdp2023}.
+
+\subsection{Protocolo de Anonimizaci{\'o}n}
+
+Antes de incorporar cualquier evidencia al repositorio o a los documentos del proyecto \textit{DentiTech}, se aplica un procedimiento estricto de anonimizaci{\'o}n:
+
+\begin{itemize}
+    \item \textbf{Eliminaci{\'o}n de identificadores directos:} Se omiten nombres completos, n{\'u}meros de c{\'e}dula, tel{\'e}fonos, correos electr{\'o}nicos personales, direcciones domiciliarias, c{\'o}digos de historia cl{\'i}nica y fotograf{\'i}as o grabaciones que permitan reconocer a personas.
+    \item \textbf{Seudonimizaci{\'o}n por rol y c{\'o}digo:} Cada participante se identifica mediante un c{\'o}digo funcional y correlativo (por ejemplo, \texttt{MED-ADM-01}, \texttt{MED-ODO-01}, \texttt{MED-HIG-01}, \texttt{MED-REC-01}, \texttt{MED-PAC-01}, \texttt{MED-PRV-01}).
+    \item \textbf{Revisi{\'o}n previa a cada commit:} Antes de subir archivos a GitHub, el responsable verifica que no existan datos personales ni documentos firmados en las carpetas del repositorio p{\'u}blico.
+\end{itemize}
+
+\subsection{Custodia de Evidencias y Cumplimiento LOPDP}
+
+Para garantizar la confidencialidad, integridad y trazabilidad de la informaci{\'o}n recabada en \textit{Medicus}:
+
+\begin{itemize}
+    \item \textbf{Almacenamiento de informaci{\'o}n sensible:} Ning{\'u}n dato personal, audio, video, captura con datos reales ni consentimiento firmado se sube al repositorio p{\'u}blico de GitHub. Dichos respaldos, cuando correspondan, se conservan exclusivamente en la carpeta privada institucional \texttt{@uteq.edu.ec} compartida con el docente.
+    \item \textbf{Trazabilidad mediante hash SHA-256:} Los archivos sensibles resguardados en el entorno privado institucional se registran mediante su huella \texttt{SHA-256} en el manifiesto del proyecto para verificar su integridad sin exponer su contenido.
+    \item \textbf{Derechos de los titulares:} Los participantes son informados sobre el car{\'a}cter acad{\'e}mico del levantamiento y sobre sus derechos de acceso, rectificaci{\'o}n, eliminaci{\'o}n y oposici{\'o}n previstos en la LOPDP.
+\end{itemize}
+
+\subsection{Consentimiento Informado}
+
+Toda entrevista, cuestionario u observaci{\'o}n en la cl{\'i}nica se realiza previa entrega y explicaci{\'o}n del formato de consentimiento informado, incluido en blanco como \texttt{PFC/E1/instrumentos/04\_consentimiento\_informado.pdf}. En dicho documento se especifica el objetivo del proyecto \textit{DentiTech}, el car{\'a}cter libre y voluntario de la participaci{\'o}n, la ausencia de impacto cl{\'i}nico en la atenci{\'o}n del paciente y las condiciones de confidencialidad y protecci{\'o}n de datos.
