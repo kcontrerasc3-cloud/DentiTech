@@ -103,3 +103,37 @@ Coordinaci{\'o}n interna del equipo & Integrantes del equipo & Grupo de mensajer
 
 Los mensajes con la cl{\'i}nica se env{\'i}an desde correos institucionales \texttt{@uteq.edu.ec}. No se comparten datos de pacientes por mensajer{\'i}a ni se guardan en el repositorio p{\'u}blico, conforme a la LOPDP \cite{lopdp2021}.
 
+\subsection{Matriz de Riesgos del Proyecto}
+
+Los riesgos se identificaron a partir del contexto de Medicus y de la forma de trabajo del equipo, siguiendo el proceso de identificaci{\'o}n, an{\'a}lisis, evaluaci{\'o}n y tratamiento de la norma ISO 31000 \cite{iso31000}. Cada riesgo se califica con una probabilidad (P) y un impacto (I) en una escala de 1 (muy bajo) a 5 (muy alto). La exposici{\'o}n es el producto $P \times I$: de 15 a 25 es \textbf{alta}, de 8 a 14 es \textbf{media} y de 1 a 7 es \textbf{baja}. Los riesgos de exposici{\'o}n alta se revisan cada semana.
+
+\begin{table}[htbp]
+\centering
+\caption{Matriz de riesgos del proyecto DentiTech}
+\label{tab:and_riesgos}
+\small
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{0.9cm} >{\raggedright\arraybackslash}p{4.0cm} >{\centering\arraybackslash}p{0.4cm} >{\centering\arraybackslash}p{0.4cm} >{\centering\arraybackslash}p{1.3cm} >{\raggedright\arraybackslash}X}
+\toprule
+\textbf{ID} & \textbf{Riesgo} & \textbf{P} & \textbf{I} & \textbf{Exp.} & \textbf{Respuesta y responsable} \\
+\midrule
+R01 & Las sesiones se cancelan o se acortan porque llegan pacientes de urgencia. & 4 & 4 & 16 Alta & Programar bloques de 20 minutos en horas de menor afluencia y llevar el cuestionario como alternativa. \textit{Frixon.} \\
+\addlinespace
+R02 & El Odont{\'o}logo Director tiene poca disponibilidad para validar decisiones. & 4 & 4 & 16 Alta & Enviar res{\'u}menes de una p{\'a}gina con preguntas cerradas y fijar con anticipaci{\'o}n las fechas de revisi{\'o}n. \textit{Anderson.} \\
+\addlinespace
+R03 & Se filtran datos de pacientes (historias cl{\'i}nicas, odontogramas, c{\'e}dulas) en el repositorio p{\'u}blico. & 2 & 5 & 10 Media & Revisar cada \textit{commit} antes de subirlo, anonimizar con c{\'o}digos de rol y guardar originales solo en la carpeta privada \cite{lopdp2021}. \textit{Kevin.} \\
+\addlinespace
+R04 & Odont{\'o}logos, recepci{\'o}n y caja describen de forma distinta las reglas de presupuestos, abonos y saldos. & 3 & 4 & 12 Media & Contrastar las versiones con los comprobantes actuales y resolver las diferencias en una reuni{\'o}n con el Odont{\'o}logo Director \cite{wiegers2023}. \textit{Landy.} \\
+\addlinespace
+R05 & La cl{\'i}nica pide m{\'o}dulos fuera del alcance (facturaci{\'o}n electr{\'o}nica, contabilidad, aplicaci{\'o}n m{\'o}vil). & 3 & 3 & 9 Media & Comparar cada pedido con los l{\'i}mites de alcance de E1 y registrarlo como mejora futura si no entra. \textit{Kevin.} \\
+\addlinespace
+R06 & El personal se resiste al cambio o no participa por desconfianza hacia el nuevo sistema. & 2 & 3 & 6 Baja & Explicar el objetivo acad{\'e}mico, mostrar prototipos tempranos y recoger sugerencias del personal. \textit{Landy.} \\
+\addlinespace
+R07 & Un integrante entrega tarde o se producen conflictos de integraci{\'o}n en LaTeX o GitHub. & 3 & 3 & 9 Media & Fijar fechas internas dos d{\'i}as antes de cada entrega, hacer \texttt{git pull} antes de cada \texttt{push} y compilar el informe integrado. \textit{Kevin.} \\
+\addlinespace
+R08 & Se citan referencias inexistentes o mal formateadas, o se usa IA sin verificar el contenido. & 2 & 4 & 8 Media & Verificar cada referencia en la fuente original (editorial o ISBN), usar solo estilo IEEE y declarar el uso de IA. \textit{Anderson.} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+R01 y R02 son los riesgos de mayor exposici{\'o}n, porque dependen de la disponibilidad de la cl{\'i}nica y no del equipo. Por eso el cronograma deja la semana 7 como margen para recuperar una sesi{\'o}n perdida sin retrasar la Entrega E2.
+
