@@ -1,17 +1,26 @@
 % =========================================================
-% SECCION 4: PLAN DE ELICITACION DE REQUISITOS
+% APORTE INDIVIDUAL: MORAN PILAGUANO FRIXON FERNANDO
+% PLAN DE ELICITACION Y ETICA DE DATOS - DENTITECH E1
+% Se conserva el aporte original de Frixon y se incorporan
+% dos roles complementarios propuestos por el equipo.
+% Revision de integracion: Kevin Contreras.
+% Este archivo se incorpora como parte del informe principal;
+% no debe compilarse de manera independiente.
+% =========================================================
 
 \section{Plan de Elicitaci{\'o}n de Requisitos}
 
 El levantamiento de requisitos para \textit{DentiTech} en la \textbf{Cl{\'i}nica Odontol{\'o}gica Medicus} (Cooperativa Jet, Quevedo) se planifica considerando la naturaleza de cada rol, el tipo de conocimiento involucrado (t{\'a}cito, expl{\'i}cito, procedimental o normativo) y la disponibilidad operativa de la cl{\'i}nica \cite{iso29148, pohl2025}.
+
 \subsection{Selecci{\'o}n de T{\'e}cnicas por Rol de Parte Interesada}
 
-A continuaci{\'o}n se detalla la t{\'e}cnica de elicitaci{\'o}n asignada a cada uno de los seis roles definidos para el sistema \textit{DentiTech}, justificando su pertinencia seg{\'u}n el conocimiento requerido y la fuente de informaci{\'o}n.
+A continuaci{\'o}n se detalla la t{\'e}cnica de elicitaci{\'o}n asignada a cada uno de los ocho roles propuestos para el sistema \textit{DentiTech}, justificando su pertinencia seg{\'u}n el conocimiento requerido y la fuente de informaci{\'o}n. Los seis roles del plan original de Frixon se conservan; el Asistente dental y el Responsable de contabilidad se incorporan como roles complementarios sujetos a validaci{\'o}n con Medicus.
 
 \begin{table}[htbp]
 \centering
 \caption{Plan de elicitaci{\'o}n por rol para la Cl{\'i}nica Odontol{\'o}gica Medicus}
 \label{tab:plan_elicitacion_medicus}
+\begin{adjustbox}{max width=\textwidth}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.7cm} >{\raggedright\arraybackslash}p{2.4cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}X}
 \toprule
 \textbf{Rol} & \textbf{Tipo de Conocimiento} & \textbf{Fuente} & \textbf{T{\'e}cnica} & \textbf{Justificaci{\'o}n} \\
@@ -27,9 +36,15 @@ Recepcionista & Operativo y expl{\'i}cito & Agenda, admisi{\'o}n y atenci{\'o}n 
 Paciente & Experiencial y t{\'a}cito & Reserva, sala de espera y consulta & Cuestionario breve y observaci{\'o}n & Identifica fricciones al agendar, tiempos de espera y claridad en la comunicaci{\'o}n y seguimiento. \\
 \addlinespace
 Proveedor de insumos & Externo y expl{\'i}cito & Pedidos, entregas y cat{\'a}logos & Entrevista breve estructurada & Clarifica plazos de reposici{\'o}n, presentaciones de insumos odontol{\'o}gicos y condiciones de suministro. \\
+\addlinespace
+Asistente dental (propuesto) & Procedimental y cl{\'i}nico & Preparaci{\'o}n del consultorio y uso de materiales & Entrevista breve y observaci{\'o}n & Permite identificar tareas de apoyo y necesidades de registro de insumos; rol pendiente de validaci{\'o}n con Medicus. \\
+\addlinespace
+Responsable de contabilidad (propuesto) & Administrativo y expl{\'i}cito & Cobros, abonos, saldos y reportes & Entrevista semiestructurada y revisi{\'o}n documental & Permite precisar reportes y controles de pagos; rol pendiente de validaci{\'o}n con Medicus. \\
 \bottomrule
 \end{tabularx}
+\end{adjustbox}
 \end{table}
+
 \subsection{Cronograma de Sesiones y Artefactos Esperados}
 
 Las sesiones de levantamiento se programan en coordinaci{\'o}n con la direcci{\'o}n de \textit{Medicus} para aprovechar ventanas de menor afluencia y contar con instrumentos estructurados que agilicen cada encuentro.
@@ -38,6 +53,7 @@ Las sesiones de levantamiento se programan en coordinaci{\'o}n con la direcci{\'
 \centering
 \caption{Cronograma de sesiones de elicitaci{\'o}n y artefactos esperados}
 \label{tab:cronograma_elicitacion}
+\begin{adjustbox}{max width=\textwidth}
 \begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{2.6cm} >{\raggedright\arraybackslash}X}
 \toprule
 \textbf{Sesi{\'o}n / Fase} & \textbf{Roles Convocados} & \textbf{Instrumento} & \textbf{Artefactos Esperados} \\
@@ -49,10 +65,17 @@ Sesi{\'o}n 2 (Sem. 6) & Odont{\'o}logo e Higienista & Gu{\'i}a de observaci{\'o}
 Sesi{\'o}n 3 (Sem. 6) & Pacientes y Proveedor de insumos & Cuestionario breve y entrevista & Consolidado anonimizado de respuestas de pacientes y notas sobre tiempos y modalidades de abastecimiento. \\
 \bottomrule
 \end{tabularx}
+\end{adjustbox}
 \end{table}
+
+La participaci{\'o}n del Asistente dental y del Responsable de contabilidad se propone de forma complementaria en las sesiones pertinentes, sin alterar el cronograma original. La confirmaci{\'o}n de estas funciones, los horarios de participaci{\'o}n y los instrumentos espec{\'i}ficos quedar{\'a}n sujetos a la validaci{\'o}n de Medicus.
+
 Los instrumentos dise{\~n}ados para estas actividades se encuentran en el directorio \texttt{PFC/E1/instrumentos/} bajo los nombres \texttt{01\_guion\_entrevista.pdf}, \texttt{02\_cuestionario.pdf} y \texttt{03\_guia\_observacion.pdf}.
+
 % =========================================================
-% SECCION 5: ETICA Y PROTECCION DE DATOS PERSONALES 
+% SECCION 5: ETICA Y PROTECCION DE DATOS PERSONALES
+% Se conserva el contenido original del aporte de Frixon.
+% =========================================================
 
 \section{{\'E}tica, Consentimiento Informado y Custodia de Evidencias}
 
@@ -81,3 +104,5 @@ Para garantizar la confidencialidad, integridad y trazabilidad de la informaci{\
 \subsection{Consentimiento Informado}
 
 Toda entrevista, cuestionario u observaci{\'o}n en la cl{\'i}nica se realiza previa entrega y explicaci{\'o}n del formato de consentimiento informado, incluido en blanco como \texttt{PFC/E1/instrumentos/04\_consentimiento\_informado.pdf}. En dicho documento se especifica el objetivo del proyecto \textit{DentiTech}, el car{\'a}cter libre y voluntario de la participaci{\'o}n, la ausencia de impacto cl{\'i}nico en la atenci{\'o}n del paciente y las condiciones de confidencialidad y protecci{\'o}n de datos.
+
+% FIN DEL APORTE INDIVIDUAL DE FRIXON MORAN PILAGUANO
